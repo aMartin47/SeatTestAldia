@@ -23,14 +23,14 @@ public class SeatConfiguratorSteps {
 	@And("^selecciona la version FR XS$")
 	public void selectVersion () {
 		//buscamos y seleccionamos la version deseada
-		WebElement version = new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(@class, 'start-config-button')]//seat-button));
+		WebElement version = new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(@class, 'start-config-button')]//seat-button)));
         version.click();
 	}
 															  
 	@And("^continuar con los valores por defecto$")
 	public void continueDefault () {
 		//pulsamos en siguiente dejando los valores por defecto hasta que muestre el código de configuración del vehículo
-		WebElement btnContinue = new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//footer//b[text()='Siguiente']");
+		WebElement btnContinue = new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//footer//b[text()='Siguiente']")));
 		//Continuamos sin elegir motor     
         	btnContinue.click();
 		//Continuamos sin elegir color ni llantas     
@@ -44,7 +44,7 @@ public class SeatConfiguratorSteps {
 	@Then("^accedemos a la última página y descargamos la configuración$")
 	public void showConfiguration () {
 		//Descargamos la configuración del vehículo
-		WebElement btnDownload = new WebDriverWait(driver, 10).untirl(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'descarga tu configuración')]");
+		WebElement btnDownload = new WebDriverWait(driver, 10).untirl(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'descarga tu configuración')]")));
 		btnDownload.click();												      
 	}
 	//Cerramos el navegador
