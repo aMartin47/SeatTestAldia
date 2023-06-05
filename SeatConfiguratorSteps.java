@@ -26,17 +26,18 @@ public class SeatConfiguratorSteps {
 		WebElement version = new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(@class, 'start-config-button')]//seat-button));
         version.click();
 	}
-	@And("^continuar con los valores por defecto")
+															  
+	@And("^continuar con los valores por defecto$")
 	public void continueDefault () {
 		//pulsamos en siguiente dejando los valores por defecto hasta que muestre el código de configuración del vehículo
 		WebElement btnContinue = new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//footer//b[text()='Siguiente']");
-		//Continuamos sin elegir motor													     
+		//Continuamos sin elegir motor     
         	btnContinue.click();
-		//Continuamos sin elegir color ni llantas													     
+		//Continuamos sin elegir color ni llantas     
 		btnContinue.click();
-		//Continuamos sin elegir tapicería													     
+		//Continuamos sin elegir tapicería     
 		btnContinue.click();
-		//Continuamos sin añadir paquetes													     
+		//Continuamos sin añadir paquetes     
 		btnContinue.click();													     
 	}														  
 
