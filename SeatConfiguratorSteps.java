@@ -23,7 +23,7 @@ public class SeatConfiguratorSteps {
 	@And("^selecciona la version FR XS$")
 	public void selectVersion () {
 		//buscamos y seleccionamos la version deseada
-		WebElement version = new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(@class, 'start-config-button')]//seat-button)));
+		WebElement version = new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(@class, 'start-config-button')]//seat-button")));
         version.click();
 	}
 															  
